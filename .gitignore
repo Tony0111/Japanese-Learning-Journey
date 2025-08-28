@@ -27,6 +27,12 @@ Thumbs.db
 .obsidian/workspace
 .obsidian/workspace.json
 .obsidian/cache
+.obsidian
 
 # 个人敏感信息
 private/
+
+
+
+# Ignore Smart Environment folder
+.smart-env
