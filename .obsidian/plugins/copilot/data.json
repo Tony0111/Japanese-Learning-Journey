@@ -16,7 +16,7 @@
   "openRouterAiApiKey": "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",
   "xaiApiKey": "",
   "mistralApiKey": "",
-  "deepseekApiKey": "sk-bfc5d46d8db843c0aaf869bd2eb2af52",
+  "deepseekApiKey": "sk-26568ac2e94e4ba1902cbc92c598ce40",
   "defaultChainType": "llm_chain",
   "defaultModelKey": "deepseek-chat|deepseek",
   "embeddingModelKey": "text-embedding-3-small|openai",
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "name": "google/gemini-2.5-flash-lite-preview-06-17",
+      "name": "google/gemini-2.5-flash-lite",
       "provider": "openrouterai",
       "enabled": true,
       "isBuiltIn": true,
@@ -133,6 +133,17 @@
     {
       "name": "gpt-4.1-mini",
       "provider": "openai",
+      "enabled": true,
+      "isBuiltIn": true,
+      "core": true,
+      "projectEnabled": true,
+      "capabilities": [
+        "vision"
+      ]
+    },
+    {
+      "name": "google/gemini-2.5-flash-lite-preview-06-17",
+      "provider": "openrouterai",
       "enabled": true,
       "isBuiltIn": true,
       "core": true,
@@ -264,6 +275,14 @@
       "core": true
     },
     {
+      "name": "gemini-embedding-001",
+      "provider": "google",
+      "enabled": true,
+      "isBuiltIn": true,
+      "isEmbeddingModel": true,
+      "core": true
+    },
+    {
       "name": "text-embedding-3-large",
       "provider": "openai",
       "enabled": true,
@@ -307,10 +326,20 @@
   "autocompleteAcceptKey": "Tab",
   "allowAdditionalContext": true,
   "enableWordCompletion": false,
-  "lastDismissedVersion": null,
+  "lastDismissedVersion": "3.0.1",
   "passMarkdownImages": true,
   "enableCustomPromptTemplating": true,
   "suggestedDefaultCommands": true,
   "reasoningEffort": "low",
-  "verbosity": "medium"
+  "verbosity": "medium",
+  "lexicalSearchRamLimit": 100,
+  "autonomousAgentMaxIterations": 4,
+  "autonomousAgentEnabledToolIds": [
+    "localSearch",
+    "webSearch",
+    "pomodoro",
+    "youtubeTranscription",
+    "writeToFile",
+    "replaceInFile"
+  ]
 }
